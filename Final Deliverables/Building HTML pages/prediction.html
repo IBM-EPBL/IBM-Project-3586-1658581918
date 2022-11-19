@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prediction</title>
+  <style>
+    
+  body{
+    margin:0;
+  }
+  nav{
+    position: fixed;
+    background: #1b1b1b;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+  }
+  nav .menu{
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .menu .logo a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  .menu ul{
+    display: inline-flex;
+  }
+  .menu ul li{
+    list-style: none;
+    margin-left: 7px;
+  }
+  .menu ul li:first-child{
+    margin-left: 0px;
+  }
+  .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  .menu ul li a:hover{
+    background: #fff;
+    color: black;
+  }
+  .center{
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+   
+  }
+  img {
+    max-width: 45%
+  }
+  .image {
+    flex-basis: 50%;
+    order: 2;
+    width: 20%;
+  }
+  .text {
+    color: #0f0f0f;
+    padding-left: 20px;
+    width:50%;
+      
+  }
+
+  button
+  {
+    align-items: center;
+  }
+  </style>
+</head>
+
+<body>
+	<nav>
+		<div class="menu">
+		  <div class="logo">
+			<a href="#">DAP DERMO CARE</a>
+		  </div>
+		  <ul>
+			<li><a href="http://127.0.0.1:5000/">Home</a></li>
+			<li><a href="/logout">Logout</a></li>
+			
+		   
+		  </ul>
+		</div>
+	  </nav>
+    <div class="center">
+         <h2><ul>DAP DERMO CARE - AI based localization and classification of skin disease with erythema </ul></h2>
+
+         <div class="container">
+          <div class="image">
+            <img src="https://media.istockphoto.com/id/1248674930/vector/person-suffering-from-rush.jpg?s=612x612&w=0&k=20&c=c6SsrBOlbXTHxsK74lJr8Afzkrt3PDFmhCgUIl2wO-w=">
+            <form id="form" action="/result" method="post" enctype="multipart/form-data">
+              <input type="submit" class="submitbtn" value="click me for a demo!">
+            </form>
+ 
+          </div>
+          <div class="text">
+            <p style="text-align: left;">Now a day’s people are suffering from skin diseases, More than 125 million people suffering
+               from Psoriasis also skin cancer rate is rapidly increasing over the last few decades 
+               especially Melanoma is most diversifying skin cancer. If skin diseases are not treated at an
+                earlier stage, then it may lead to complications in the body including spreading of the 
+                infection from one individual to the other. The skin diseases can be prevented by 
+                investigating the infected region at an early stage. The characteristic of the skin images
+                 is diversified so that it is a challenging job to devise an efficient and robust algorithm 
+                 for automatic detection of skin disease and its severity. Skin tone and skin colour play
+                 an important role in skin disease detection. Colour and coarseness of skin are visually 
+                 different. Automatic processing of such images for skin analysis requires quantitative 
+                 discriminator to differentiate the diseases.<p>
+          </div>
+        </div>
+    
+
+        </div>
+          
+        </body>
+</html>
+   
